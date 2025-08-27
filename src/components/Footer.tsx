@@ -115,7 +115,7 @@ export default function Footer() {
 
       {/* Bottom Section */}
       <section className="text-center text-sm opacity-50 py-4 border-t border-border">
-        &copy; 2025 MyInstitute. All rights reserved.
+        &copy; 2025 ICT Center. All rights reserved | Developed by Rok Rak Dev
       </section>
     </footer>
   );

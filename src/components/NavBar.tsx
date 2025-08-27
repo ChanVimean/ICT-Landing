@@ -57,7 +57,9 @@ export default function Navbar() {
                   className="p-2 hover:bg-gray-200/20 rounded duration-150 ease-in-out"
                 >
                   <NavigationMenuLink asChild>
-                    <Link href={nav.path} className="text-sm">{nav.title}</Link>
+                    <Link href={nav.path} className="text-sm">
+                      {nav.title}
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               ))}
@@ -67,6 +69,20 @@ export default function Navbar() {
                 <NavigationMenuTrigger>Courses</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid p-2 w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                    <NavigationMenuItem className="p-2 hover:bg-gray-200/20 rounded duration-150 ease-in-out">
+                      <Link href="/admissions">Web Developement</Link>
+                      <p className="opacity-75">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit, laudantium?
+                      </p>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className="p-2 hover:bg-gray-200/20 rounded duration-150 ease-in-out">
+                      <Link href="/admissions">Web Developement</Link>
+                      <p className="opacity-75">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit, laudantium?
+                      </p>
+                    </NavigationMenuItem>
                     <NavigationMenuItem className="p-2 hover:bg-gray-200/20 rounded duration-150 ease-in-out">
                       <Link href="/admissions">Web Developement</Link>
                       <p className="opacity-75">

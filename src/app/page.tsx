@@ -1,19 +1,7 @@
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
-import React from "react";
-
-export default function page() {
+export default function Home() {
   return (
     <div>
-      <nav>
-        <NavBar />
-      </nav>
-
-      <main></main>
-
-      <footer>
-        <Footer />
-      </footer>
+      <h1>Home page</h1>
     </div>
   );
 }
