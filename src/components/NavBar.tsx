@@ -11,9 +11,9 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { useThemeStore } from "@/store/useThemeStore";
 import { LuMoon, LuSun } from "react-icons/lu";
 import SideBar from "./SideBar";
+import { useThemeStore } from "@/store/useThemeStore";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useThemeStore();
@@ -25,6 +25,7 @@ export default function Navbar() {
     { title: "Faculty", path: "/faculty" },
     { title: "Events", path: "/events" },
     { title: "Contact", path: "/contact" },
+    { title: "Careers", path: "/careers" },
   ];
 
   return (
@@ -44,20 +45,20 @@ export default function Navbar() {
               href="/"
               className="hidden md:block text-lg font-bold text-gray-900 dark:text-white"
             >
-              ICT Professional Training Center
+              ICT Center
             </Link>
           </div>
 
           {/* Navigation Menu */}
           <NavigationMenu className="hidden lg:block">
-            <NavigationMenuList>
+            <NavigationMenuList className="space-x-2">
               {menu.map((nav) => (
-                <NavigationMenuItem
-                  key={nav.path}
-                  className="p-2 hover:bg-gray-200/20 rounded duration-150 ease-in-out"
-                >
+                <NavigationMenuItem key={nav.path}>
                   <NavigationMenuLink asChild>
-                    <Link href={nav.path} className="text-sm">
+                    <Link
+                      href={nav.path}
+                      className="text-sm p-2 hover:bg-gray-200/20 rounded duration-150 ease-in-out"
+                    >
                       {nav.title}
                     </Link>
                   </NavigationMenuLink>

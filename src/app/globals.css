@@ -46,7 +46,7 @@
 :root {
   /* ? 🔥 Custom Theme (Light Mode) */
   --bg-theme: #f9fafb; /* soft neutral bg */
-  --text-theme: #1e293b; /* slate-like text */
+  --text-theme: #003049; /* slate-like text */
 
   /* Shadcn ui */
   --radius: 0.625rem;
@@ -85,7 +85,7 @@
 
 .dark {
   /* ? 🔥 Custom Theme (Dark Mode) */
-  --bg-theme: #0f172a; /* deep slate bg */
+  --bg-theme: #003049; /* deep slate bg */
   --text-theme: #f8fafc; /* almost white text */
 
   /* Shadcn ui */
@@ -120,6 +120,12 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+body {
+  background-color: var(--bg-theme);
+  color: var(--text-theme);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 @layer base {

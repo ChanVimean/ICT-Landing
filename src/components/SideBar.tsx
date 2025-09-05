@@ -1,3 +1,5 @@
+"use client";
+
 import { RxHamburgerMenu } from "react-icons/rx";
 import {
   Sheet,
@@ -9,10 +11,10 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import { Button } from "./ui/button";
-import { useThemeStore } from "@/store/useThemeStore";
 import { LuMoon, LuSun } from "react-icons/lu";
 import Link from "next/link";
 import { useState } from "react";
+import { useThemeStore } from "@/store/useThemeStore";
 
 export default function SideBar() {
   const { theme, toggleTheme } = useThemeStore();
